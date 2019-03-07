@@ -16,9 +16,3 @@ def isValidNumber(n):
 
 if __name__ == '__main__':
 	print("Hello World")
-	works = True;
-	for i in range(10000):
-		if (i%5!=0 and i%7==0) != isValidNumber(i):
-			works = False
-			print(i)
-	print(works)
