@@ -18,12 +18,8 @@ if __name__ == '__main__':
 	print("Hello World!!!")
 
 valnums = []
-for i in range(2000,3200):
-	if isValidNumber(i) == True:
-		valnums.append(i)
+for i in range(2000,2500):
+	if isValidNumber(i) == True: # if number is divisible by 7 or 5
+		valnums.append(i) # add it to valid number list
 
-for i in range(len(valnums)):
-	if i != len(valnums):
-		print(str(valnums[i]) + ", ")
-	else:
-		print(str(valnums[i]))
+print(*valnums, sep = ",") # then print compiled list of valid numbers
